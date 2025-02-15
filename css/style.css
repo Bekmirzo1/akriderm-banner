@@ -448,7 +448,23 @@ body {
   }
 
   .product__body {
+    bottom: 15vh;
+  }
+
+  .product__about {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 67.49875em) and (max-aspect-ratio: 3/2) {
+  .product__body {
     bottom: clamp(6rem, 16vh, 1000px);
+  }
+}
+
+@media (max-width: 67.49875em) and (min-aspect-ratio: 3/2) {
+  .product__about {
+    width: 60vw;
   }
 }
 
@@ -467,33 +483,45 @@ body {
   }
 
   .product__body {
-    bottom: clamp(3.75rem, 16.6666666667vh, 1000px);
+    bottom: 20vh;
   }
 
   .product__about {
     padding: 0.3359731222em 0em 0.3359731222em 0.4079673626em;
+    width: 90vw;
   }
 }
 
-@media (max-width: 37.49875em) and (max-aspect-ratio: 2/1) {
+@media (max-width: 37.49875em) and (max-aspect-ratio: 3/2) {
   .top__bg {
     width: 160%;
     left: -11%;
   }
+
+  .product__body {
+    bottom: clamp(3.75rem, 16.6666666667vh, 1000px);
+  }
 }
 
-@media (max-width: 23.43625em) and (max-aspect-ratio: 2/1.5) {
-  .top__bg {
-    width: 200%;
-    left: -27%;
+@media (max-width: 37.49875em) and (min-aspect-ratio: 3/2) {
+  .product__about {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 23.43625em) and (max-aspect-ratio: 3/2) {
+  .product__body {
+    bottom: clamp(3.75rem, 20vh, 1000px);
   }
 }
 
 @media (max-width: 23.43625em) {
-  .product__body {
-    bottom: clamp(3.75rem, 20vh, 1000px);
+  .product__about {
+    width: 80vw;
   }
+}
 
+@media (max-width: 23.43625em) and (min-aspect-ratio: 3/2) {
   .product__about {
     width: 60vw;
   }
