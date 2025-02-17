@@ -1,51 +1,3 @@
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PFDinTextCompPro";
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-  src: url("../fonts/PFDinTextCompPro.woff2") format("woff2"), url("../fonts/PFDinTextCompPro.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "MyriadProCond";
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-  font-stretch: condensed;
-  src: url("../fonts/ofontru_MyriadProCond.woff2") format("woff2"), url("../fonts/ofontru_MyriadPro_Cond.woff") format("woff");
-}
-
-.title-big,
-.product__about,
-.innovation__body {
-  font-family: "MyriadProCond";
-  font-size: 3.8583333333vw;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-._block {
-  display: block;
-}
-
 * {
   padding: 0px;
   margin: 0px;
@@ -69,460 +21,260 @@ a:active {
   outline: none;
 }
 
-html,
-body {
-  height: 100%;
-  min-width: 7.5rem;
-}
-
-body {
-  font-family: "Montserrat";
-  font-size: 1rem;
-  line-height: 1;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-button {
-  cursor: pointer;
-  color: inherit;
-  background-color: inherit;
-}
-
-a {
-  color: inherit;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-.bottom {
+.wrapper {
   position: fixed;
-  width: 100%;
-  bottom: 0;
   left: 0;
-  z-index: 100;
-}
-
-.bottom__body {
-  background-color: rgba(255, 255, 255, 0.49);
-  color: #542278;
-  font-family: "PFDinTextCompPro";
-  font-weight: 400;
-  padding: clamp(1px, 0.9884678748vh, 0.5555555556vw) clamp(2px, 0.3703703704vw, 10px) 0;
-}
-
-.bottom__body svg path {
-  fill: #542278;
-}
-
-.bottom__content {
-  opacity: 0.8;
-}
-
-.bottom__top {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.462962963vw;
-  margin: 0 0 0.0632911392em 0;
-}
-
-.bottom__bottom-image {
+  top: 0;
   width: 100%;
-}
-
-.bottom__bottom-image img,
-.bottom__bottom-image svg {
-  display: block;
-  width: 100%;
+  height: 100%;
+  max-width: 120.125rem;
+  max-height: 67.5rem;
+  min-width: 11.875rem;
+  min-height: 5.625rem;
+  border: 0.0625rem solid #e62b75;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .woman {
-  position: fixed;
-  width: 100%;
+  position: absolute;
+  width: 58.9814814815%;
   height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.woman__body {
-  position: fixed;
-  width: clamp(670px, 67vmax, 100000px);
   bottom: 0;
   left: 0;
-}
-
-.woman__image {
-  position: relative;
-  padding-bottom: 100%;
-}
-
-.woman__image img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.top {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 5;
-}
-
-.top__content {
-  position: fixed;
-  top: 0;
-  left: 12.1296296296vw;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  font-size: clamp(1.25rem, 3.0863888889vw, 10rem);
-}
-
-.top__logo {
-  width: clamp(6.25rem, 33.7037037037vw, 31.25rem);
-  margin: 2vmin 0;
-}
-
-.top__logo-image {
-  position: relative;
-  padding-bottom: 17.032967033%;
-}
-
-.top__logo-image img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.top__title {
-  text-transform: uppercase;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  font-weight: 700;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-
-.top__title-num {
-  font-size: 0.5001050011em;
-}
-
-.top__subtitle {
-  font-size: 0.6249062491em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.top__bg {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
   z-index: -1;
+  background: url("../img/woman_back_blur.png") left bottom/contain no-repeat;
 }
 
-.top__bg-image {
-  position: relative;
-  padding-bottom: 25.6481481481%;
-}
-
-.top__bg-image img {
+.top-bg {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 40%;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: url("../img/top-cover.png") bottom/cover no-repeat;
+}
+
+.logo {
+  position: absolute;
+  width: 33.7962962963%;
+  height: 8%;
+  top: 3%;
+  left: 22%;
+  background: url("../img/logo.png") center/contain no-repeat;
+}
+
+.top-content {
+  position: absolute;
+  width: 53.4259259259%;
+  height: 18%;
+  top: 12%;
+  left: 12%;
+  background: url("../img/text.png") center/contain no-repeat;
 }
 
 .innovation {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
+  position: absolute;
+  z-index: 3;
+  width: 35%;
+  height: 10%;
+  top: 2%;
   right: 0;
-  z-index: 20;
-  pointer-events: none;
-}
-
-.innovation__body {
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin: 2vmin 0 0 0;
-  background: #e62b75;
-  color: #fff;
-  width: 7.8473722102em;
-  padding: 0.3359731222em 0em 0.4079673626em 0.4559635229em;
-  border-radius: 0.3839692825em 0 0 0.3839692825em;
-}
-
-.innovation__text {
-  text-transform: uppercase;
-  pointer-events: auto;
+  background: url("../img/text-fill-top.png") right/contain no-repeat;
 }
 
 .product {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 4;
-  pointer-events: none;
-}
-
-.product__body {
-  pointer-events: auto;
-  position: fixed;
-  bottom: clamp(5rem, 13.1795716639vh, 1000px);
-  right: 3.5185185185vw;
-}
-
-.product__about {
-  color: #fff;
-  background-color: #e62b75;
-  border-radius: 0.3839692825em 0 0 0.3839692825em;
-  padding: 0.3359731222em 0em 0.4079673626em 0.4559635229em;
-  width: 10.4151667867em;
-}
-
-.product__box {
   position: absolute;
-  left: 4.6082949309%;
-  bottom: 100%;
+  width: 37.962962963%;
+  height: 80%;
+  right: 2%;
+  bottom: 5%;
+  background: url("../img/front.png") center/contain no-repeat;
 }
 
-.product__box_50 {
-  width: 14.5161290323%;
-}
-
-.product__box_50 .product__box-image {
-  padding-bottom: 282.5396825397%;
-}
-
-.product__box_100 {
-  width: 17.2811059908%;
-  left: 23.0414746544%;
-}
-
-.product__box_100 .product__box-image {
-  padding-bottom: 298.6666666667%;
-}
-
-.product__box-image {
-  position: relative;
-}
-
-.product__box-image img {
+.bottom {
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 12%;
+  bottom: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-color: rgba(255, 255, 255, 0.49);
 }
 
-.product__bottle {
+.bottom__bottom {
   position: absolute;
-  width: 62.9032258065%;
-  right: -5.5%;
-  bottom: -100%;
-}
-
-.product__bottle-image {
-  position: relative;
-  padding-bottom: 181.684981685%;
-}
-
-.product__bottle-image img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 99%;
+  height: 95%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: url("../img/bottom-text.png") bottom/100% 100% no-repeat;
 }
 
 body {
   background-color: #fff;
 }
 
-@media (min-width: 37.49875em) {
-  .top__title {
-    white-space: nowrap;
-  }
-}
-
-@media (min-width: 37.49875em) and (min-aspect-ratio: 2/1) {
-  .top__bg {
-    top: auto;
-    bottom: 50vh;
-  }
-}
-
-@media (max-width: 67.49875em) {
-  .bottom__top {
-    font-size: 2.6666666667vw;
-  }
-
-  .top__content {
+@media screen and (orientation: portrait) {
+  .woman {
     width: 100%;
-    left: 0;
-    font-size: clamp(0.8125rem, 4.6666666667vw, 1.875rem);
+    background-image: url("../img/woman_back_blur_2.png");
   }
 
-  .top__logo {
-    width: 50vw;
+  .top-bg {
+    height: 48%;
+    background-image: url("../img/top-cover_2.png");
   }
 
-  .top__bg {
-    width: 140%;
-    left: -5%;
+  .logo {
+    height: 11%;
+    top: 12%;
+    left: 21%;
+    width: 51.5%;
   }
 
-  .innovation__body {
-    width: 4.7996160307em;
+  .top-content {
+    width: 82%;
+    height: 9%;
+    top: 21%;
+    left: 6%;
+    background-image: url("../img/text_2.png");
   }
 
-  .product__body {
-    bottom: 15vh;
+  .innovation {
+    width: 60%;
   }
 
-  .product__about {
-    width: 80vw;
-  }
-}
-
-@media (max-width: 67.49875em) and (max-aspect-ratio: 3/2) {
-  .product__body {
-    bottom: clamp(6rem, 16vh, 1000px);
-  }
-}
-
-@media (max-width: 67.49875em) and (min-aspect-ratio: 3/2) {
-  .product__about {
-    width: 60vw;
-  }
-}
-
-@media (max-width: 37.49875em) {
-  .woman__body {
-    width: clamp(550px, 67vmax, 1000px);
+  .product {
+    width: 65.833333%;
+    height: 38.5%;
+    right: 2%;
+    bottom: 16%;
+    background-image: url("../img/front_2.png");
   }
 
-  .top__logo {
-    margin: 4vmin 0 3.5vmin;
+  .bottom {
+    height: 12%;
   }
 
-  .innovation__body {
-    margin: 4vmin 0 0 0;
-    padding: 0.3359731222em 0em 0.3359731222em 0.4079673626em;
-  }
-
-  .product__body {
-    bottom: 20vh;
-  }
-
-  .product__about {
-    padding: 0.3359731222em 0em 0.3359731222em 0.4079673626em;
-    width: 90vw;
+  .bottom__bottom {
+    background-image: url("../img/bottom-text_2.png");
   }
 }
 
-@media (max-width: 37.49875em) and (max-aspect-ratio: 3/2) {
-  .top__bg {
-    width: 160%;
-    left: -11%;
+@media screen and (orientation: portrait) and (min-aspect-ratio: 1/2) {
+  .woman {
+    width: 90%;
   }
 
-  .product__body {
-    bottom: clamp(3.75rem, 16.6666666667vh, 1000px);
+  .top-bg {
+    height: 35%;
+  }
+
+  .logo {
+    height: 11%;
+    top: 1%;
+    left: 17%;
+    width: 51.5%;
+  }
+
+  .top-content {
+    width: 81.1666666667%;
+    height: 14.8333333333%;
+    top: 12%;
+    left: 4%;
+  }
+
+  .innovation {
+    width: 30%;
+    background-image: url("../img/text-fill-top_2.png");
+  }
+
+  .product {
+    width: 52.8333333333%;
+    height: 70.5%;
+    right: 2%;
+    bottom: 2%;
+  }
+
+  .bottom {
+    height: 12%;
   }
 }
 
-@media (max-width: 37.49875em) and (min-aspect-ratio: 3/2) {
-  .product__about {
-    width: 60vw;
+@media (min-aspect-ratio: 10/3) {
+  .woman {
+    width: 100%;
+    height: 120%;
+  }
+
+  .top-bg {
+    height: 60%;
+  }
+
+  .logo {
+    width: 33.796296%;
+    height: 10%;
+    top: 3%;
+    left: 22.5%;
+  }
+
+  .top-content {
+    width: 30.425926%;
+    height: 20%;
+    top: 18%;
+    left: 23.5%;
+  }
+
+  .innovation {
+    top: 4%;
+    width: 20%;
+    height: 20%;
+  }
+
+  .product {
+    width: 35.962963%;
+    height: 91%;
+    right: 11%;
+    bottom: 5%;
   }
 }
 
-@media (max-width: 23.43625em) and (max-aspect-ratio: 3/2) {
-  .product__body {
-    bottom: clamp(3.75rem, 20vh, 1000px);
+@media (min-aspect-ratio: 20/3) {
+  .woman {
+    width: 100%;
   }
-}
 
-@media (max-width: 23.43625em) {
-  .product__about {
-    width: 80vw;
+  .top-bg {
+    height: 82%;
   }
-}
 
-@media (max-width: 23.43625em) and (min-aspect-ratio: 3/2) {
-  .product__about {
-    width: 60vw;
+  .logo {
+    width: 32.796296%;
+    height: 14%;
+    top: 10%;
+    left: 22.5%;
+  }
+
+  .top-content {
+    width: 30.425926%;
+    height: 28%;
+    top: 31%;
+    left: 23.5%;
+  }
+
+  .innovation {
+    top: 4%;
+    width: 20%;
+    height: 29%;
+  }
+
+  .product {
+    width: 35.962963%;
+    height: 93%;
+    right: 12%;
+    bottom: 5%;
   }
 }
